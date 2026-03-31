@@ -12,6 +12,9 @@
       "Bash(done)",
       "Bash(grep -l 'lang=\"\"sr\"\"' c:/Users/mihab/Desktop/Axon/*.html)",
       "Bash(grep -rn \"google.com/maps\" c:/Users/mihab/Desktop/Axon/*.html)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\mihab\\Desktop\\Axon"
     ]
   }
 }
