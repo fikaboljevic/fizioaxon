@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usluge – AXON Fizikalna Terapija Podgorica</title>
+    <meta
+      name="description"
+      content="Terapeutske usluge AXON klinike u Podgorici: TECAR terapija, shockwave, elektroterapija, laser, magnetoterapija, masaža, kiropraktika i akupunktura."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fizioaxon.com/usluge.html" />
+    <meta
+      property="og:title"
+      content="Usluge – AXON Fizikalna Terapija Podgorica"
+    />
+    <meta
+      property="og:description"
+      content="Terapeutske usluge AXON klinike u Podgorici: TECAR terapija, shockwave, elektroterapija, laser, magnetoterapija, masaža, kiropraktika i akupunktura."
+    />
+    <meta
+      property="og:image"
+      content="https://fizioaxon.com/images/axon-logo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://fizioaxon.com/usluge.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+      @media (max-width: 700px) {
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+        .service-card-v2[style*="grid-column"] .service-card-v2__img {
+          height: 260px !important;
+        }
+      }
+
+      /* Slide animacija za FAQ */
+      .faq-img {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .faq-list {
+        opacity: 0;
+        transform: translateX(60px);
+        transition:
+          opacity 0.7s ease 0.15s,
+          transform 0.7s ease 0.15s;
+      }
+      .faq-img.card--visible,
+      .faq-list.card--visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      /* Slide animacija za kartice */
+      .service-card-v2 {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+        transition-delay: 0s !important;
+      }
+      .service-card-v2:nth-child(even) {
+        transform: translateX(60px);
+      }
+      .service-card-v2.card--visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="AXON – početna">
+          <img
+            src="images/axon-logo.png"
+            alt="AXON Fizikalna Terapija"
+            class="logo-img"
+          />
+        </a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Otvori meni"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="main-nav" aria-label="Glavna navigacija">
+          <a href="index.html" class="nav__link">Početna</a>
+          <a href="o-nama.html" class="nav__link">O Nama</a>
+          <a href="specijalizacije.html" class="nav__link">Specijalizacije</a>
+          <a href="usluge.html" class="nav__link">Usluge</a>
+          <a href="rezultati.html" class="nav__link">Rezultati</a>
+          <a href="kontakt.html" class="nav__link">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <h1>Usluge</h1>
+        <p>Kompletna paleta terapeutskih tretmana dostupnih u AXON klinici</p>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section section--light">
+        <div class="container">
+          <h2 class="section-title">Naše usluge</h2>
+          <div class="services-grid" style="margin-top: 40px">
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="background-image: url('images/Sala-1.jpg'); background-size: cover; position: relative; filter: contrast(1.08) saturate(1.05); will-change: transform;"
+              >
+                <div style="
+                  position: absolute;
+                  top: 20px;
+                  left: 20px;
+                  background: #0096b0;
+                  color: #fff;
+                  font-size: 0.78rem;
+                  font-weight: 700;
+                  letter-spacing: 0.06em;
+                  text-transform: uppercase;
+                  padding: 6px 14px;
+                  border-radius: 20px;
+                ">Najpopularnija usluga</div>
+              </div>
+              <div class="service-card-v2__body">
+                <h3>Poluindividualni treninzi pod nadzorom fizioterapeuta</h3>
+                <p>
+                  Jedinstven koncept u Crnoj Gori po kojem smo prepoznati i koji
+                  je ujedno najtraženija usluga u našoj ustanovi. Treninzi se
+                  održavaju u grupama do 3 osobe po terapeutu, uz stalni stručni
+                  nadzor. Cilj programa je rješavanje funkcionalnih nedostataka
+                  i dugoročno uklanjanje bolnih stanja.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Pregled-fizijatra.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Pregled fizijatra</h3>
+                <p>
+                  Detaljan specijalistički pregled podrazumijeva procjenu
+                  posture, pokretljivosti, mišićne snage i funkcionalnog
+                  statusa. Na osnovu pregleda postavlja se precizna dijagnoza i
+                  pravi individualni plan terapije.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Schroth-metoda.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Schroth metoda</h3>
+                <p>
+                  Trodimenzionalna terapija za korekciju skolioze i deformiteta
+                  kičme. Kombinuje specifične korektivne položaje, kontrolisano
+                  disanje i aktivaciju oslabljenih mišićnih grupa.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Diskus-hernija.jpg&quot;);
+                  background-position: center 80%;
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Liječenje diskus hernije i bolova u kičmi</h3>
+                <p>
+                  Program obuhvata kombinaciju manuelnih tehnika, aparaturnih
+                  terapija i specifičnih stabilizacionih vježbi. Cilj je
+                  smanjenje bola i dugoročna stabilnost kičmenog stuba.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Tecar-terapija.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>TEKAR terapija</h3>
+                <p>
+                  Napredna terapija koja djeluje dubinski na mišiće i zglobove
+                  putem radiofrekventne energije. Ubrzava regeneraciju tkiva,
+                  smanjuje bol i poboljšava cirkulaciju.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Shockwave-terapija.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Shockwave terapija</h3>
+                <p>
+                  Terapija udarnim talasima koristi se kod hroničnih bolova,
+                  kalcifikata, plantarnog fascitisa i problema sa tetivama.
+                  Stimuliše prirodne procese regeneracije.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Elektroterapija.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Elektroterapija</h3>
+                <p>
+                  Primjena različitih vrsta terapijskih struja za smanjenje bola
+                  i stimulaciju mišića. Koristi se kod akutnih i hroničnih
+                  bolnih stanja te kod mišićne slabosti.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="background-image: url(&quot;images/Laser.jpg&quot;)"
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Laser terapija</h3>
+                <p>
+                  Biostimulativna terapija koja ubrzava regeneraciju tkiva i
+                  smanjuje upalu. Djeluje direktno na ćelijskom nivou i pomaže
+                  kod bolnih i degenerativnih stanja.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Magnetoterapija.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Magnetoterapija</h3>
+                <p>
+                  Koristi pulsirajuće magnetno polje za podsticanje regeneracije
+                  kostiju i mekih tkiva. Posebno je korisna kod preloma,
+                  degenerativnih promjena i hroničnih bolova.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Ultrazvucna-terapija.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Ultrazvučna terapija</h3>
+                <p>
+                  Dubinska mikromasaža tkiva putem zvučnih talasa. Poboljšava
+                  cirkulaciju, smanjuje bol i ubrzava oporavak mekih tkiva.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Akupunktura.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Akupunktura</h3>
+                <p>
+                  Prirodna metoda ublažavanja bola i podrške oporavku organizma.
+                  Tanke igle se postavljaju na specifične tačke tijela kako bi
+                  stimulisale prirodne mehanizme zacjeljivanja i smanjile
+                  napetost u mišićima.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Elektroakupunktura.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Elektroakupunktura</h3>
+                <p>
+                  Nadogradnja klasične akupunkture blagom električnom
+                  stimulacijom kroz igle. Pojačava terapijski efekat, posebno
+                  kod hroničnih bolova, mišićnih spazama i neuroloških stanja.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="
+                  background-image: url(&quot;images/Kiropraktika.jpg&quot;);
+                "
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Kiropraktika</h3>
+                <p>
+                  Manuelna tehnika koja se fokusira na dijagnostiku i tretman
+                  poremećaja mišićno-koštanog sistema. Kroz kontrolisane
+                  manipulacije zglobova poboljšava pokretljivost, smanjuje bol i
+                  oslobađa pritisak na živce.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="background-image: url(&quot;images/Masaza.jpg&quot;)"
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Medicinska masaža</h3>
+                <p>
+                  Terapijska masaža usmjerena na smanjenje napetosti,
+                  poboljšanje cirkulacije i opuštanje mišića. Koristi se kao dio
+                  rehabilitacionog procesa ili kao samostalna terapija.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card-v2">
+              <div
+                class="service-card-v2__img"
+                style="background-image: url(&quot;images/Presoterapija.jpg&quot;)"
+              ></div>
+              <div class="service-card-v2__body">
+                <h3>Presoterapija</h3>
+                <p>
+                  Presoterapija je savremena metoda limfne drenaže koja podstiče
+                  cirkulaciju i ubrzava eliminaciju viška tečnosti iz organizma.
+                  Idealna je za smanjenje otoka, osjećaja težine u nogama i
+                  oporavak nakon fizičkog napora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--light" style="padding-top: 30px">
+        <div class="container">
+          <h2 class="section-title">Često postavljena pitanja</h2>
+          <p class="section-subtitle">
+            Odgovori na najčešća pitanja o našim terapijama
+          </p>
+          <div class="faq-layout">
+            <div
+              class="faq-img"
+              style="background-image: url(&quot;images/FAQ.jpg&quot;)"
+            ></div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question">
+                  Koje vrste masaža sprovodite?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    U našoj ustanovi sprovodimo relaks, terapeutske i sportske
+                    masaže, kao i limfnu drenažu. Svaka masaža prilagođena je
+                    individualnim potrebama pacijenta, bilo da je cilj
+                    opuštanje, rehabilitacija ili poboljšanje funkcionalnosti
+                    tijela.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Koliki je broj članova na treninzima po grupi?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Da bismo održali visoki kvalitet rada, svaka grupa broji 3
+                    do najviše 4 člana. Iako se radi o grupnom treningu, svakom
+                    polazniku se izrađuje individualni plan treninga prilagođen
+                    njegovim potrebama i ciljevima.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Koliko vremenski traju treninzi i terapije u Vašem centru?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Treninzi i terapije obično traju oko 60 minuta.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Da li kiropraktikom možete korigovati položaj pršljenova i
+                  ublažiti grbu na vratu?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Kiropraktikom se ne "namještaju" pršljenovi niti se direktno
+                    uklanja grbica na vratu. Primarna funkcija kiropraktike je
+                    oslobađanje gasova koji se nakupljaju u zglobnim šupljinama,
+                    što dovodi do trenutnog olakšanja i veće mobilnosti. Za
+                    dugoročne rezultate potrebno je kombinovati promjenu načina
+                    života, ciljane vježbe i terapijske programe koji jačaju
+                    mišiće, poboljšavaju držanje i smanjuju opterećenje na
+                    kičmu.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Koliko tretmana je obično potrebno da se riješe tegobe i bol?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Broj terapija je individualan i zavisi od prirode stanja
+                    koje se tretira. Na prvom pregledu radimo detaljnu procjenu,
+                    a svaki naredni tretman uključuje evaluaciju i
+                    prilagođavanje plana terapija kako bismo u najkraćem roku
+                    postigli željene rezultate.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Koje fizikalne terapije su dostupne u vašoj ustanovi?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Od fizikalnih terapija primjenjujemo savremene terapijske
+                    metode, uključujući TECAR terapiju, shockwave terapiju,
+                    elektroterapijske procedure, terapiju laserom,
+                    magnetoterapiju i ultrazvučnu terapiju. Takođe koristimo dry
+                    needling i elektroakupunkturu, kao i manuelne terapijske
+                    tehnike poput kiropraktike, masaže i Mulligan mobilizacija.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Koja stanja tretirate u Vašoj ustanovi?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Naša zdravstvena ustanova se bavi liječenjem problema
+                    kičmenog stuba, uključujući diskus hernije, bolove u vratu i
+                    leđima, kao i deformitete kičme kod djece (skolioza, kifoza
+                    i lordoza). Pružamo rehabilitaciju sportskih povreda,
+                    neuroloških stanja poput moždanog udara, multiple skleroze i
+                    Parkinsonove bolesti, kao i terapiju glavobolja i
+                    vrtoglavica. Takođe se bavimo oporavkom nakon preloma i
+                    operativnih zahvata.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section" style="text-align: center; padding-top: 20px">
+        <div class="container">
+          <h2 class="section-title">Trebate savjet o terapiji?</h2>
+          <p class="section-subtitle">
+            Naš tim je tu da vam pomogne odabrati pravi tretman
+          </p>
+          <a href="kontakt.html" class="btn btn--primary">Kontaktirajte nas</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img
+                src="images/axon-logo.png"
+                alt="AXON Fizikalna Terapija"
+                class="logo-img footer-logo-img"
+              />
+            </div>
+            <p>
+              Specijalizovana klinika za fizikalnu terapiju i rehabilitaciju.
+              Vaše zdravlje je naš prioritet.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Lokacija</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot" style="margin-top: 3px"></i>
+                <a
+                  href="https://www.google.com/maps/place/Axon+fizikalna+terapija/@42.4355206,19.2412116,17z"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: inherit"
+                  >Dr Vukašina Markovića 114, 81000 Podgorica</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Kontakt</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+38267080890" style="color: inherit"
+                  >+382 67 080 890</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:axonpodgorica@gmail.com" style="color: inherit"
+                  >axonpodgorica@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: inherit"
+                  >Axon fizikalna terapija</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+                <a
+                  href="https://www.instagram.com/axon_fizikalna_terapija"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: inherit"
+                  >@axon_fizikalna_terapija</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Radno Vrijeme</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-clock"></i> Pon – Pet: 08:00 – 22:00
+              </li>
+              <li><i class="fa-solid fa-clock"></i> Subota: 08:00 – 18:00</li>
+              <li><i class="fa-solid fa-lock"></i> Nedjelja: Zatvoreno</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2025 AXON Fizikalna Terapija. Sva prava zadržana.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <script src="script.js"></script>
+    <script>
+      const cardObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("card--visible");
+              cardObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+
+      document
+        .querySelectorAll(".service-card-v2, .faq-img, .faq-list")
+        .forEach(function (card) {
+          cardObserver.observe(card);
+        });
+    </script>
+  </body>
+</html>

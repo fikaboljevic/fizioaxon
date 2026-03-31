@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Nama – AXON Fizikalna Terapija Podgorica</title>
+    <meta
+      name="description"
+      content="Saznajte više o AXON klinici, našem timu stručnjaka i misiji pružanja vrhunske fizikalne terapije i rehabilitacije u Podgorici."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fizioaxon.com/o-nama.html" />
+    <meta
+      property="og:title"
+      content="O Nama – AXON Fizikalna Terapija Podgorica"
+    />
+    <meta
+      property="og:description"
+      content="Saznajte više o AXON klinici, našem timu stručnjaka i misiji pružanja vrhunske fizikalne terapije i rehabilitacije u Podgorici."
+    />
+    <meta
+      property="og:image"
+      content="https://fizioaxon.com/images/axon-logo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://fizioaxon.com/o-nama.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      /* ── Scroll animations ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .reveal.reveal--left {
+        transform: translateX(-50px);
+      }
+      .reveal.reveal--right {
+        transform: translateX(50px);
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translate(0);
+      }
+
+      /* Zadnji red - 2 centrirane kartice */
+      .team-grid__last-row {
+        grid-column: 1 / -1;
+        display: flex;
+        gap: 28px;
+        justify-content: center;
+      }
+      .team-grid__last-row-card {
+        width: calc((100% - 56px) / 3);
+      }
+      @media (max-width: 900px) {
+        .team-grid__last-row {
+          flex-direction: column;
+          gap: 28px;
+        }
+        .team-grid__last-row-card {
+          width: 100%;
+        }
+      }
+      @media (min-width: 535px) and (max-width: 900px) {
+        .flip-card__photo.scaled {
+          transform: scale(1.1) !important;
+        }
+      }
+      @media (min-width: 650px) and (max-width: 900px) {
+        .flip-card__photo.scaled {
+          object-position: center 40% !important;
+        }
+        .flip-card__photo.scaled-aleksandra {
+          object-position: 65% 20% !important;
+        }
+        .flip-card__photo.scaled-srdjan {
+          object-position: center 55% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="AXON – početna">
+          <img
+            src="images/axon-logo.png"
+            alt="AXON Fizikalna Terapija"
+            class="logo-img"
+          />
+        </a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Otvori meni"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="main-nav" aria-label="Glavna navigacija">
+          <a href="index.html" class="nav__link">Početna</a>
+          <a href="o-nama.html" class="nav__link">O Nama</a>
+          <a href="specijalizacije.html" class="nav__link">Specijalizacije</a>
+          <a href="usluge.html" class="nav__link">Usluge</a>
+          <a href="rezultati.html" class="nav__link">Rezultati</a>
+          <a href="kontakt.html" class="nav__link">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <h1>O Nama</h1>
+        <p>
+          Upoznajte tim koji stoji iza AXON klinike – stručnjaci predani vašem
+          zdravlju i oporavku
+        </p>
+      </section>
+
+      <!-- ABOUT TEXT -->
+      <section class="section about-text-section">
+        <div class="container">
+          <div class="about-text reveal reveal--left">
+            <h2>Naša priča i misija</h2>
+            <p>
+              AXON klinika za fizikalnu terapiju i rehabilitaciju osnovana je s
+              jasnom vizijom: pružiti pacijentima u Crnoj Gori zdravstvenu njegu
+              koja je na nivou evropskih standarda. Smještena u Podgorici,
+              klinika okuplja stručan tim fizioterapeuta i specijalista
+              posvećenih individualnom pristupu svakom pacijentu.
+            </p>
+            <p>
+              Naša misija je holistički pristup liječenju – razumijevanje ne
+              samo fizičkih simptoma, već i životnog stila, ciljeva i potreba
+              svakog pacijenta. Svaki plan terapije je individualno prilagođen,
+              jer vjerujemo da svako tijelo zahtijeva poseban pristup. Pravi
+              oporavak moguć je samo kada pacijent aktivno učestvuje u procesu
+              liječenja, podržan stručnim timom koji ga prati na svakom koraku.
+            </p>
+            <p>
+              Vizija AXON-a je da postanemo vodeći centar fizikalne medicine u
+              Crnoj Gori, kontinuiranim ulaganjem u edukaciju osoblja, nabavku
+              moderne opreme i primjenu terapijskih protokola utemeljenih na
+              najnovijim naučnim dostignućima.
+            </p>
+            <a
+              href="kontakt.html"
+              class="btn btn--primary"
+              style="margin-top: 14px"
+              >Zakažite pregled</a
+            >
+          </div>
+          <div class="about-visual reveal reveal--right">
+            <img src="images/Ekipa.jpg" alt="AXON tim" />
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section
+        class="section"
+        style="background: linear-gradient(135deg, #112740 0%, #0a4a5c 100%)"
+      >
+        <div class="container">
+          <h2 class="section-title reveal" style="color: #fff">
+            Naš tim stručnjaka
+          </h2>
+          <p
+            class="section-subtitle reveal"
+            style="color: rgba(255, 255, 255, 0.7)"
+          >
+            Iskusni specijalisti posvećeni vašem zdravlju i oporavku
+          </p>
+          <div class="team-grid">
+            <!-- Dr. Aleksandra Savić -->
+            <div class="flip-card reveal" style="transition-delay: 0s">
+              <div class="flip-card__inner">
+                <!-- PREDNJA STRANA -->
+                <div class="flip-card__front" style="background: #fff">
+                  <img
+                    src="images/Aleksandra.png"
+                    alt="Dr. Aleksandra Savić"
+                    class="flip-card__photo scaled-aleksandra"
+                    style="
+                      object-position: 65% top;
+                      transform: scale(1.05);
+                      transform-origin: 65% top;
+                    "
+                  />
+                  <div class="flip-card__front-info">
+                    <h3>Dr. Aleksandra Savić</h3>
+                    <span
+                      >Specijalista fizikalne medicine i rehabilitacije</span
+                    >
+                  </div>
+                </div>
+
+                <!-- ZADNJA STRANA -->
+                <div class="flip-card__back">
+                  <div class="team-card-v2__header">
+                    <div class="team-card-v2__avatar">
+                      <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <div>
+                      <h3>Dr. Aleksandra Savić</h3>
+                      <span class="team-card-v2__role"
+                        >Specijalista fizikalne medicine i rehabilitacije</span
+                      >
+                    </div>
+                  </div>
+                  <div class="team-card-v2__body">
+                    <p>
+                      Specijalista fizikalne medicine i rehabilitacije sa
+                      dugogodišnjim iskustvom u dijagnostici, liječenju i
+                      rehabilitaciji pacijenata različitih profila.
+                      Profesionalni put započela i usavršila u Beogradu, gdje je
+                      završila Medicinski fakultet i specijalizaciju iz
+                      fizikalne medicine i rehabilitacije.
+                    </p>
+                    <p>
+                      U svom svakodnevnom radu posvećena je sveobuhvatnoj
+                      rehabilitaciji ortopedskih, reumatoloških, neuroloških i
+                      neurohirurških pacijenata u KCCG, kao i ranoj
+                      postoperativnoj rehabilitaciji.
+                    </p>
+                    <p>
+                      Stručno se usavršavala u oblastima ortopedske i onkološke
+                      rehabilitacije, te tretmana limfedema. Završila je
+                      sertifikovani kurs manuelne limfne drenaže po metodi dr
+                      Voddera (Dr Vodder Academy), kao i Školu akupunkture
+                      (SUIM).
+                    </p>
+                  </div>
+                  <div class="team-card-v2__tags">
+                    <span>Fizikalna medicina</span>
+                    <span>Ortopedska rehab.</span>
+                    <span>Akupunktura</span>
+                    <span>Limfna drenaža</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Srđan Mijović -->
+            <div class="flip-card reveal" style="transition-delay: 0.1s">
+              <div class="flip-card__inner">
+                <!-- PREDNJA STRANA -->
+                <div class="flip-card__front">
+                  <img
+                    src="images/Srdja.jpg"
+                    alt="Srđan Mijović"
+                    class="flip-card__photo scaled scaled-srdjan"
+                    style="
+                      object-position: center 60%;
+                      transform: scale(1.35);
+                      transform-origin: center 60%;
+                      filter: contrast(1.1) saturate(1.05);
+                      will-change: transform;
+                      image-rendering: -webkit-optimize-contrast;
+                    "
+                  />
+                  <div class="flip-card__front-info">
+                    <h3>Srđan Mijović</h3>
+                    <span
+                      >Diplomirani fizioterapeut · ISST SCHROTH terapeut</span
+                    >
+                  </div>
+                </div>
+
+                <!-- ZADNJA STRANA -->
+                <div class="flip-card__back">
+                  <div class="team-card-v2__header">
+                    <div class="team-card-v2__avatar">
+                      <i class="fa-solid fa-person-walking"></i>
+                    </div>
+                    <div>
+                      <h3>Srđan Mijović</h3>
+                      <span class="team-card-v2__role"
+                        >Diplomirani fizioterapeut · ISST SCHROTH terapeut</span
+                      >
+                    </div>
+                  </div>
+                  <div class="team-card-v2__body">
+                    <p>
+                      Diplomirani fizioterapeut i ISST SCHROTH terapeut,
+                      specijalizovan za tretman deformiteta kičmenog stuba,
+                      posebno skolioza.
+                    </p>
+                    <p>
+                      Usavršavao se kroz edukacije SCHROTH metode, Dry
+                      Needling-a, Electric Needling-a, sportske medicine i HVLA
+                      manipulacija.
+                    </p>
+                    <p>
+                      Posvećen individualnim tretmanima i rehabilitaciji
+                      pacijenata.
+                    </p>
+                  </div>
+                  <div class="team-card-v2__tags">
+                    <span>SCHROTH metoda</span>
+                    <span>Skolioza</span>
+                    <span>Dry Needling</span>
+                    <span>HVLA manipulacija</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Marko Mićković -->
+            <div class="flip-card reveal" style="transition-delay: 0.2s">
+              <div class="flip-card__inner">
+                <!-- PREDNJA STRANA -->
+                <div class="flip-card__front">
+                  <img
+                    src="images/Marko.jpg"
+                    alt="Marko Mićković"
+                    class="flip-card__photo scaled"
+                    style="
+                      object-position: center 45%;
+                      transform: scale(1.35);
+                      transform-origin: center 45%;
+                      filter: contrast(1.1) saturate(1.05);
+                      will-change: transform;
+                      image-rendering: -webkit-optimize-contrast;
+                    "
+                  />
+                  <div class="flip-card__front-info">
+                    <h3>Marko Mićković</h3>
+                    <span>Diplomirani fizioterapeut</span>
+                  </div>
+                </div>
+
+                <!-- ZADNJA STRANA -->
+                <div class="flip-card__back">
+                  <div class="team-card-v2__header">
+                    <div class="team-card-v2__avatar">
+                      <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div>
+                      <h3>Marko Mićković</h3>
+                      <span class="team-card-v2__role"
+                        >Diplomirani fizioterapeut</span
+                      >
+                    </div>
+                  </div>
+                  <div class="team-card-v2__body">
+                    <p>
+                      Diplomirani fizioterapeut, specijalizovan za
+                      rehabilitaciju pacijenata sa diskus hernijom, bolnim
+                      stanjima kičmenog stuba i problemima sa vrtoglavicama.
+                    </p>
+                    <p>
+                      Iskustvo obuhvata sportsku, ortopedsku i neurološku
+                      rehabilitaciju. Završio je dodatne edukacije iz
+                      fizioterapije kod vertiga, iThrust HVLA manipulacija,
+                      akupunkture i cupping terapije.
+                    </p>
+                    <p>
+                      Cilj mu je da svakom pacijentu poboljša kvalitet života.
+                    </p>
+                  </div>
+                  <div class="team-card-v2__tags">
+                    <span>Diskus hernija</span>
+                    <span>Vrtoglavice</span>
+                    <span>Sportska rehab.</span>
+                    <span>Cupping</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zadnji red - 2 kartice centrirane -->
+            <div class="team-grid__last-row">
+              <!-- Djordje Barovic -->
+              <div
+                class="flip-card reveal team-grid__last-row-card"
+                style="transition-delay: 0.3s"
+              >
+                <div class="flip-card__inner">
+                  <!-- PREDNJA STRANA -->
+                  <div class="flip-card__front">
+                    <img
+                      src="images/Djordje.jpg"
+                      alt="Đorđe Barović"
+                      class="flip-card__photo scaled"
+                      style="
+                        object-position: center 60%;
+                        transform: scale(1.35);
+                        transform-origin: center 60%;
+                        filter: contrast(1.1) saturate(1.05);
+                        will-change: transform;
+                        image-rendering: -webkit-optimize-contrast;
+                      "
+                    />
+                    <div class="flip-card__front-info">
+                      <h3>Đorđe Barović</h3>
+                      <span>Diplomirani fizioterapeut</span>
+                    </div>
+                  </div>
+
+                  <!-- ZADNJA STRANA -->
+                  <div class="flip-card__back">
+                    <div class="team-card-v2__header">
+                      <div class="team-card-v2__avatar">
+                        <i class="fa-solid fa-dumbbell"></i>
+                      </div>
+                      <div>
+                        <h3>Đorđe Barović</h3>
+                        <span class="team-card-v2__role"
+                          >Diplomirani fizioterapeut</span
+                        >
+                      </div>
+                    </div>
+                    <div class="team-card-v2__body">
+                      <p>
+                        Fizioterapeut posvećen unapređenju zdravlja,
+                        funkcionalnosti i sportskih performansi svojih
+                        pacijenata.
+                      </p>
+                      <p>
+                        Iskustvo je sticao radeći sa sportistima svih nivoa,
+                        gdje je razvio vještine u procjeni, rehabilitaciji i
+                        pripremi sportista za povratak na teren.
+                      </p>
+                      <p>
+                        Završio je CFSC edukaciju (Certified Functional Strength
+                        Coach) i specijalizovao se za limfnu drenažu, što mu
+                        omogućava efikasno kombinovanje treninga, oporavka i
+                        manuelnih tehnika.
+                      </p>
+                    </div>
+                    <div class="team-card-v2__tags">
+                      <span>Sportska rehab.</span>
+                      <span>CFSC</span>
+                      <span>Limfna drenaža</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Andrija Golubović -->
+              <div
+                class="flip-card reveal team-grid__last-row-card"
+                style="transition-delay: 0.4s"
+              >
+                <div class="flip-card__inner">
+                  <!-- PREDNJA STRANA -->
+                  <div class="flip-card__front">
+                    <img
+                      src="images/Andrija.jpg"
+                      alt="Andrija Golubović"
+                      class="flip-card__photo scaled"
+                      style="
+                        object-position: center 60%;
+                        transform: scale(1.35);
+                        transform-origin: center 60%;
+                        filter: contrast(1.1) saturate(1.05);
+                        will-change: transform;
+                        image-rendering: -webkit-optimize-contrast;
+                      "
+                    />
+                    <div class="flip-card__front-info">
+                      <h3>Andrija Golubović</h3>
+                      <span>Fizioterapeut · Trener</span>
+                    </div>
+                  </div>
+
+                  <!-- ZADNJA STRANA -->
+                  <div class="flip-card__back">
+                    <div class="team-card-v2__header">
+                      <div class="team-card-v2__avatar">
+                        <i class="fa-solid fa-dumbbell"></i>
+                      </div>
+                      <div>
+                        <h3>Andrija Golubović</h3>
+                        <span class="team-card-v2__role"
+                          >Fizioterapeut · Trener</span
+                        >
+                      </div>
+                    </div>
+                    <div class="team-card-v2__body">
+                      <p>
+                        Specijalizovan je za sportske masaže, oporavak nakon
+                        povreda, kao i grupne treninge koji podižu snagu,
+                        kondiciju i motivaciju na viši nivo.
+                      </p>
+                      <p>
+                        Ono što ga izdvaja jeste profesionalan i posvećen
+                        pristup svakom klijentu, energija koju prenosi na druge
+                        i rezultati koji govore sami za sebe.
+                      </p>
+                    </div>
+                    <div class="team-card-v2__tags">
+                      <span>Sportske masaže</span>
+                      <span>Oporavak</span>
+                      <span>Grupni treninzi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- kraj wrapper-a za zadnji red -->
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIJA -->
+      <section class="section" style="background: #f5f0eb">
+        <div class="container">
+          <h2 class="section-title reveal">Naša klinika</h2>
+          <p class="section-subtitle reveal">
+            Moderno opremljen prostor prilagođen svakom pacijentu
+          </p>
+          <div class="gallery-grid">
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/Prva.jpg&quot;);
+                transition-delay: 0s;
+              "
+            ></div>
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/Druga.jpg&quot;);
+                transition-delay: 0.1s;
+              "
+            ></div>
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/Klinika-1.jpg&quot;);
+                transition-delay: 0.15s;
+              "
+            ></div>
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/Klinika-8.jpg&quot;);
+                transition-delay: 0.2s;
+              "
+            ></div>
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/Axon.jpg&quot;);
+                transition-delay: 0.25s;
+              "
+            ></div>
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/Sala-1.jpg&quot;);
+                transition-delay: 0.3s;
+              "
+            ></div>
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/sala-2.jpg&quot;);
+                transition-delay: 0.35s;
+              "
+            ></div>
+            <div
+              class="gallery-item reveal"
+              style="
+                background-image: url(&quot;images/Sala-3.jpg&quot;);
+                transition-delay: 0.4s;
+              "
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUES -->
+      <section class="section" style="padding-top: 20px">
+        <div class="container">
+          <div
+            style="
+              width: 60px;
+              height: 4px;
+              background: #0096b0;
+              border-radius: 2px;
+              margin: 0 auto 24px;
+            "
+          ></div>
+          <h2 class="section-title reveal">Naše vrijednosti</h2>
+          <p class="section-subtitle reveal" style="margin-bottom: 28px">
+            Principi koji vode svaki naš korak u radu s pacijentima
+          </p>
+          <div class="grid-4">
+            <div class="card value-card reveal" style="transition-delay: 0s">
+              <span class="value-card__icon">🎯</span>
+              <h3>Stručnost</h3>
+              <p>
+                Kontinuirano ulaganje u edukaciju i praćenje najnovijih
+                dostignuća medicinske nauke.
+              </p>
+            </div>
+
+            <div class="card value-card reveal" style="transition-delay: 0.1s">
+              <span class="value-card__icon">💙</span>
+              <h3>Empatija</h3>
+              <p>
+                Svaki pacijent je jedinstven. Slušamo, razumijemo i
+                prilagođavamo pristup individualnim potrebama.
+              </p>
+            </div>
+
+            <div class="card value-card reveal" style="transition-delay: 0.2s">
+              <span class="value-card__icon">✅</span>
+              <h3>Integritet</h3>
+              <p>
+                Transparentnost u dijagnozi, tretmanu i troškovima. Gradimo
+                povjerenje temeljeno na poštenju.
+              </p>
+            </div>
+
+            <div class="card value-card reveal" style="transition-delay: 0.3s">
+              <span class="value-card__icon">🚀</span>
+              <h3>Inovacija</h3>
+              <p>
+                Usvajamo najsavremenije terapijske metode i opremu kako bismo
+                osigurali najbolje rezultate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img
+                src="images/axon-logo.png"
+                alt="AXON Fizikalna Terapija"
+                class="logo-img footer-logo-img"
+              />
+            </div>
+            <p>
+              Specijalizovana klinika za fizikalnu terapiju i rehabilitaciju.
+              Vaše zdravlje je naš prioritet.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Lokacija</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot" style="margin-top: 3px"></i>
+                <a
+                  href="https://www.google.com/maps/place/Axon+fizikalna+terapija/@42.4355206,19.2412116,17z"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: inherit"
+                  >Dr Vukašina Markovića 114, 81000 Podgorica</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Kontakt</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+38267080890" style="color: inherit"
+                  >+382 67 080 890</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:axonpodgorica@gmail.com" style="color: inherit"
+                  >axonpodgorica@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: inherit"
+                  >Axon fizikalna terapija</a
+                >
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+                <a
+                  href="https://www.instagram.com/axon_fizikalna_terapija"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: inherit"
+                  >@axon_fizikalna_terapija</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Radno Vrijeme</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-clock"></i> Pon – Pet: 08:00 – 22:00
+              </li>
+              <li><i class="fa-solid fa-clock"></i> Subota: 08:00 – 18:00</li>
+              <li><i class="fa-solid fa-lock"></i> Nedjelja: Zatvoreno</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2025 AXON Fizikalna Terapija. Sva prava zadržana.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <script src="script.js"></script>
+    <script>
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => revealObserver.observe(el));
+    </script>
+  </body>
+</html>
