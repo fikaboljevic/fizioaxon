@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "fizioaxon.vercel.app"
+        }
+      ],
+      "destination": "https://www.fizioaxon.com/$1",
+      "permanent": true
+    }
+  ]
+}
