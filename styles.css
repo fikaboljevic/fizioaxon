@@ -499,6 +499,12 @@ p {
 .flip-card {
   perspective: 1200px;
   height: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.flip-card:not(.flipped):hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
 }
 .flip-card__inner {
   display: grid;
@@ -507,8 +513,28 @@ p {
   transform-style: preserve-3d;
   transition: transform 0.7s ease;
 }
-.flip-card:hover .flip-card__inner {
+.flip-card.flipped .flip-card__inner {
   transform: rotateY(180deg);
+}
+@keyframes hint-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50%       { transform: scale(1.2); opacity: 1; }
+}
+.flip-card__hint {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  pointer-events: none;
+  animation: hint-pulse 1.5s ease-in-out infinite;
 }
 .flip-card__front,
 .flip-card__back {
